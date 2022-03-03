@@ -8,22 +8,28 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <section>
       <h1>Speed Game</h1>
-      <h3>Your Score <span class="score"></span></h3>
-      <div class="game-button">
-        <button id="button1"></button>
-        <button id="button2"></button>
-        <button id="button3"></button>
-        <button id="button4"></button>
+      <div class="gamearea">
+        <h2>Your Score <span id="score"></span></h2>
+        <div class="circles">
+          <div class="circle">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+        </div>
+
+        <button type="button" id="start">Start game</button>
+        <button type="button" id="stop">Stop game</button>
       </div>
-      <div class="start-game">
-        <button>Start game</button>
+    </section>
+    <section id="overlay">
+      <div class="modal">
+        <p>Game over</p>
+        <p id="result">result</p>
+        <button type="button" id="close">X</button>
       </div>
-      <div class="stop-game">
-        <button>Stop game</button>
-      </div>
-    </div>
+    </section>
 
     <script src="app.js"></script>
   </body>

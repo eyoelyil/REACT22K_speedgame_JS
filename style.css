@@ -4,16 +4,65 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: ;
-}
-
 body {
   background-color: aqua;
 }
-.game-button {
+
+h1 {
+  font-size: 5rem;
+}
+#score {
+  font-size: 2rem;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: antiquewhite;
   display: inline-block;
-  border-radius: 50%;
+  margin: 1rem;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: khaki;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+#overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  width: 40%;
+  height: 25%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+#result {
+  font-size: 1.5rem;
 }
